@@ -1,44 +1,26 @@
 EJOY 2D
 =======
 
-Make
-====
+ubuntu 22.04
 
-For Windows and msvc
+* install glew
 
-* msvc\make.bat
-* ej2d examples/ex01.lua to test
+```
+sudo apt-get install libglew-dev
+```
 
-For Windows and mingw32
+* install freetype
 
-* Install glew 1.9
-* make or make mingw
-* ej2d examples/ex01.lua to test
+```
+sudo apt-get install libfreetype6-dev
+```
 
-For Linux ,
+* install font
 
-* Install glew 1.9
-* Install freetype 2
-* make or make linux
+path `posix/winfont.c` pre define font, you can change font. put font in dir, then
+
+```
+fc-cache -f -v
+```
+* make 
 * ./ej2d examples/ex01.lua to test
-
-For Mac OS ,
-
-* Install glfw3
-* Install freetype 2
-* make or make macosx
-* ./ej2d examples/ex01.lua to test
-
-API
-====
-
-https://github.com/cloudwu/ejoy2d/blob/master/doc/apicn.md  (work in process , in Chinese)
-
-Question?
-=======
-
-Please read http://blog.codingnow.com/2013/12/ejoy2d.html first (In Chinese) 
-
-Chinese API document 
-
-Put your questions in [Issues](https://github.com/cloudwu/ejoy2d/issues) .
