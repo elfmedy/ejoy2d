@@ -24,3 +24,5 @@ fc-cache -f -v
 ```
 * make 
 * ./ej2d examples/ex01.lua to test
+
+![demo iamge](https://github.com/elfmedy/ejoy2d/blob/master/img/extra.png)
