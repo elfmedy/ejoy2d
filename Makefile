@@ -103,7 +103,7 @@ ej2dlib :
 
 linux : OS := LINUX
 linux : TARGET := ej2d
-linux : CFLAGS += -I/usr/include $(shell freetype-config --cflags)
+linux : CFLAGS += -I/usr/include $(shell pkg-config --cflags freetype2)
 linux : LDFLAGS +=  -lGLEW -lGL -lX11 -lfreetype -lm
 linux : SRC += posix/window.c posix/winfw.c posix/winfont.c
 
